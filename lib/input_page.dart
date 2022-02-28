@@ -34,8 +34,6 @@ class _InputPageState extends State<InputPage> {
 
   @override
   Widget build(BuildContext context) {
-    double screenHeight = MediaQuery.of(context).size.height;
-    double screenWidth = MediaQuery.of(context).size.width;
 
     return Scaffold(
       appBar: AppBar(
@@ -43,8 +41,7 @@ class _InputPageState extends State<InputPage> {
       ),
       body: Column(
         children: [
-          SizedBox(
-            height: screenHeight * 0.27,
+          Expanded(
             child: Row(
               children: [
                 Expanded(
